@@ -1,0 +1,34 @@
+{
+    "Master":"主页",
+    "Log":"日志",
+    "Set":"设置",
+    "Export":"导出",
+    "Record":"记录",
+    "Competition":"比赛",
+    "Ordinary":"普通",
+    "Start":"开始",
+    "End":"结束",
+    "Stop":"暂停",
+    "Plan":"导入计划",
+    "Save":"保存",
+    "Timer":"定时",
+    "Delay":"延时",
+    "HourMeter":"计时",
+    "Overtime":"加时",
+    "Select":"选择",
+    "AppLog":"应用日志",
+    "DefaultPlan":["组网","绘图","硬件","截图","开发"],
+    
+    "Message":{
+        "ExportFile":"文件导出路径为",
+        "Complet":"已完成了",
+        "Start":"启动",
+        "End":"结束",
+        "Stop":"暂停",
+        "Save":"修改保存",
+        "Competition":"比赛模式",
+        "Ordinary":"普通模式",
+        "DelayStart":"时间为3秒"
+    }
+
+}

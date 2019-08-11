@@ -1,0 +1,33 @@
+{
+    "Master":"Mater",
+    "Log":"Log",
+    "Set":"Set",
+    "Export":"Export",
+    "Record":"Record",
+    "Competition":"Competition",
+    "Ordinary":"Ordinary",
+    "Start":"Start",
+    "End":"End",
+    "Stop":"Stop",
+    "Plan":"Export Plan",
+    "Save":"Save",
+    "Timer":"Timer",
+    "Delay":"Delay",
+    "HourMeter":"HourMeter",
+    "Overtime":"Overtime",
+    "Select":"Select",
+    "AppLog":"AppLog",
+    "DefaultPlan":["Networking","Drawing","Hardware","Screenshot","Development"],
+
+    "Message":{
+        "ExportFile":"File Export Path is",
+        "Complet":" has completed ",
+        "Start":"Start",
+        "End":"End",
+        "Stop":"Stop",
+        "Save":" Changed Save",
+        "Competition":"Competition Mode",
+        "Ordinary":"Ordinary Mode",
+        "DelayStart":"Time: 3 second"
+    }
+}

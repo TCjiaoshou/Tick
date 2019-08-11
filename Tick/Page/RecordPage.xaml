@@ -1,0 +1,41 @@
+﻿<Page x:Class="Tick.RecordPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:Tick"
+      mc:Ignorable="d" 
+      d:DesignHeight="1050" d:DesignWidth="1900" Loaded="Page_Load"
+      Title="RecordPage">
+
+    <DockPanel>
+        <Grid DockPanel.Dock="Left" Width="200" Background="#11000000">
+            <Button x:Name="btnLeftImport" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,30" Content="导入计划" Width="Auto" Height="40" Click="ExportUserAPlan_Click"/>
+            <ComboBox Name="comboUserAPlan" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="30,0,0,100" Width="140" Height="35"/>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="60,0,0,160" Width="80" Height="40" Click="UserARecord_Click">
+                <materialDesign:PackIcon Kind="ChevronTripleRight" Width="40" Height="30"/>
+            </Button>
+        </Grid>
+        <Grid DockPanel.Dock="Right" Width="200" Background="#11000000">
+            <Button x:Name="btnRightImport" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,30" Content="导入计划" Width="Auto" Height="40" Click="ExportUserBPlan_Click"/>
+            <ComboBox Name="comboUserBPlan" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,30,100" Width="140" Height="35"/>
+            <Button HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,60,160" Width="80" Height="40" Click="UserBRecord_Click">
+                <materialDesign:PackIcon Kind="ChevronTripleLeft" Width="40" Height="30"/>
+            </Button>
+        </Grid>
+        <Grid DockPanel.Dock="Top" Height="100" >
+            <TextBlock Name="txtCompetition" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Text="比赛日志" FontSize="32"/>
+            <TextBox Name="txtUserA" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="120,0,0,0" Text="User A" Width="160" Height="40" TextAlignment="Center" FontSize="30" Background="{x:Null}"/>
+            <TextBox Name="txtUserB" HorizontalAlignment="Right"  VerticalAlignment="Center" Margin="0,0,120,0" Text="User B" Width="160" Height="40" TextAlignment="Center" FontSize="30" Background="{x:Null}"/>
+        </Grid>
+        <Grid DockPanel.Dock="Bottom" Height="100">
+            <Button Name="btnLeftExport" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="160,0,0,0" Content="导出" Width="80" Height="40" Click="ExportUserALog_Click"/>
+            <Button Name="btnRightExport" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,160,0" Content="导出" Width="80" Height="40" Click="ExportUserBLog_Click"/>
+            <Button Name="btnCenterExport" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Content="导出" Width="80" Height="40" Click="ExportCompetitionLog_Click"/>
+        </Grid>
+        <TextBox Name="txtUserALog" DockPanel.Dock="Left" Width="400" BorderThickness="5" Background="{x:Null}" TextAlignment="Left" IsReadOnly="True" FontSize="24"/>
+        <TextBox Name="txtUserBLog" DockPanel.Dock="Right" Width="400" BorderThickness="5" Background="{x:Null}" TextAlignment="Right" IsReadOnly="True" FontSize="24"/>
+        <TextBox Name="txtCompetitionLog" BorderThickness="10" Background="{x:Null}" TextAlignment="Center" VerticalScrollBarVisibility="Auto" IsReadOnly="True" FontSize="24"/>
+    </DockPanel>
+</Page>
